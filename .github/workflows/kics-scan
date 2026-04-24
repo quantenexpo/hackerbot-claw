@@ -1,0 +1,19 @@
+name: KiCS scan
+
+on:
+  workflow_dispatch:
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Mkdir results-dir
+      # make sure results dir is created
+      run: mkdir -p results-dir
+    - name: run kics Scan
+      uses: checkmarx/kics-github-action@latest
+      with:
+        path: '.github/workflows'
+        ignore_on_exit: results
+        output_path: results-dir
+    - name: display kics results
+      run: |
+        cat results-dir/results.json
