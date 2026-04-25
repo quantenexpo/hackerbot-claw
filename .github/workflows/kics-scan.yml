@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  kics:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,6 +15,7 @@ jobs:
         uses: checkmarx/kics-github-action@v2.1.20
         with:
           path: '.github/workflows'
+          platform_type: cicd
           ignore_on_exit: results
           output_path: results-dir
       - name: display kics results
