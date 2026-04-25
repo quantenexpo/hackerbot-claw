@@ -1,7 +1,8 @@
 name: KiCS scan
 permissions:
+  contents: read
   actions: read
-  security-events: read
+  security-events: write
   
 on:
   workflow_dispatch:
