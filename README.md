@@ -1,12 +1,3 @@
-Here is a polished, consistent, repository‑ready **README.md** based entirely on your provided text, with file names and paths aligned to the structure of  
-**[https://github.com/quantenexpo/hackerbot-claw](https://github.com/quantenexpo/hackerbot-claw)**.
-
-No copyrighted content is included, and everything is original wording.
-
-You can paste this directly into `README.md` at the root of the repository.
-
----
-
 # KICS Query Customization Example
 
 ## Disclaimer
@@ -197,11 +188,3 @@ This repository demonstrates:
 - How to reproduce the process using the KICS CLI and official KICS libraries
 
 These examples can serve as a template for building additional custom KICS queries for GitHub Actions security analysis.
-
----
-
-If you want, I can also generate:
-
-- A CONTRIBUTING.md  
-- A diagram showing the query‑generation workflow  
-- A section explaining how to run the KICS scan locally
