@@ -1,0 +1,11 @@
+{
+  "id": "a4b1c2d3-e5f6-7890-abcd-ef0123456789",
+  "queryName": "Untrusted Checkout Critical",
+  "severity": "CRITICAL",
+  "category": "Insecure Configurations",
+  "descriptionText": "Detects Actions workflows executing untrusted PR head code in a privileged context via: (A) pull_request_target with tainted checkout ref (head.ref, refs/pull/*/merge, or head.sha); (B) pull_request_target with direct expression injection of pull_request.head.ref in a run script; (C) issue_comment fetching/checking out PR head code without an author_association guard.",
+  "descriptionUrl": "https://securitylab.github.com/research/github-actions-preventing-pwn-requests/",
+  "platform": "CICD",
+  "cloudProvider": "common",
+  "cwe": "CWE-829"
+}
