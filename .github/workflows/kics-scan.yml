@@ -16,6 +16,7 @@ jobs:
         with:
           path: '.github/workflows'
           platform_type: cicd
+          disable_secrets: true
           ignore_on_exit: results
           output_path: results-dir
       - name: display kics results
