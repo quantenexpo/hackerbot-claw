@@ -20,6 +20,7 @@ jobs:
         with:
           path: '.github/workflows'
           platform_type: cicd
+          queries: 'assets/queries/cicd/github'
           exclude_queries: 555ab8f9-2001-455e-a077-f2d0f41e2fb9
           disable_secrets: true
           ignore_on_exit: results
