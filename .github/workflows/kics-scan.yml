@@ -22,5 +22,5 @@ jobs:
         run: |
           cat results-dir/results.json
           # optionally parse the results with jq
-          jq '.total_counter' results-dir/results.json
-          jq '.queries_total' results-dir/results.json
+          jq "# results: \(.total_counter)"' results-dir/results.json
+          jq "# queries run: \(.queries_total)"' results-dir/results.json
